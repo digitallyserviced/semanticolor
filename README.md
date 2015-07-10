@@ -10,4 +10,4 @@ For JavaScript syntax to work properly you will need the language-javascript-sem
 
 Some features and ideas were taken from that package and applied globally, not just to JavaScript.
 
-![A screenshot of semanticolor](./screenshot.png)
+![A screenshot of semanticolor](https://raw.githubusercontent.com/xcezzz/semanticolor/master/screenshot.png)
