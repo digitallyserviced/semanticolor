@@ -1,16 +1,17 @@
 {
-  "name": "colorlexia",
-  "main": "./lib/colorlexia",
-  "version": "0.0.1",
-  "description": "A short description of your package",
+  "name": "semanticolor",
+  "main": "./lib/semanticolor",
+  "version": "0.1.0",
+  "description": "Provide semantic coloring for Atom. Define what is colorized. Up to 180 color combinations based off your Theme/Style. Every variable, function, class name, constant has a consistent color across all of your source.",
   "keywords": [],
-  "repository": "https://github.com/atom/colorlexia",
+  "repository": "https://github.com/atom/semanticolor",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
   },
+  "readme": "README.md",
   "styleSheets": [
-    "colorlexia.atom-text-editor.less"
+    "semanticolor.atom-text-editor.less"
   ],
   "dependencies": {
     "atom-space-pen-views": "~2.0.5",

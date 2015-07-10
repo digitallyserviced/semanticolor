@@ -28,7 +28,7 @@
 
     .color-indices(@n, @i: 1) when (@i =< @n) {
       @hue: @i * (360 / @n);
-      &.colorlexia-@{i} {
+      &.semanticolor-@{i} {
         // Choose a color of the given hue with good contrast
         color: contrast(@syntax-background-color,
           hsl(@hue, 100%, 25%),
