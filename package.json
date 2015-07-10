@@ -1,9 +1,17 @@
 {
   "name": "semanticolor",
   "main": "./lib/semanticolor",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "Provide semantic coloring for Atom. Define what is colorized. Up to 180 color combinations based off your Theme/Style. Every variable, function, class name, constant has a consistent color across all of your source.",
-  "keywords": ["semantic", "highlight", "color", "colorcoder", "coding with colors", "dyslexic","dysgraphic"],
+  "keywords": [
+    "semantic",
+    "highlight",
+    "color",
+    "colorcoder",
+    "coding with colors",
+    "dyslexic",
+    "dysgraphic"
+  ],
   "repository": "https://github.com/xcezzz/semanticolor",
   "license": "MIT",
   "engines": {
