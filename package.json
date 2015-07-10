@@ -1,0 +1,19 @@
+{
+  "name": "colorlexia",
+  "main": "./lib/colorlexia",
+  "version": "0.0.1",
+  "description": "A short description of your package",
+  "keywords": [],
+  "repository": "https://github.com/atom/colorlexia",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "styleSheets": [
+    "colorlexia.atom-text-editor.less"
+  ],
+  "dependencies": {
+    "atom-space-pen-views": "~2.0.5",
+    "lodash": "^3.10.0"
+  }
+}

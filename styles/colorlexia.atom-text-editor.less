@@ -1,0 +1,58 @@
+// The ui-variables file is provided by base themes provided by Atom.
+//
+// See https://github.com/atom/atom-dark-ui/blob/master/styles/ui-variables.less
+// for a full listing of what's available.
+@import "syntax-variables";
+.colorlexia {
+}
+
+@bright-text-color:
+  contrast(@syntax-background-color,
+      lighten(@syntax-text-color, 20%),
+      darken(@syntax-text-color, 20%));
+
+.text-color(@contrast) {
+  color: mix(@bright-text-color, @syntax-background-color, @contrast);
+}
+
+.source {
+  // Reset font attributes to prevent interference from main syntax theme
+  .text-color(80%);
+  background-color: transparent;
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: none;
+
+  .identifier {
+    .color-indices(180);
+
+    .color-indices(@n, @i: 1) when (@i =< @n) {
+      @hue: @i * (360 / @n);
+      &.colorlexia-@{i} {
+        // Choose a color of the given hue with good contrast
+        color: contrast(@syntax-background-color,
+          hsl(@hue, 100%, 25%),
+          hsl(@hue, 65%, 75%)) !important;
+      }
+      .color-indices(@n, @i + 1);
+    }
+  }
+
+  .comment {
+    .text-color(40%);
+  }
+
+  .keyword {
+    font-weight: bold;
+  }
+
+  .number {
+    .text-color(100%);
+  }
+
+  .string,
+  .regex {
+    // TODO: Currently, these are simply the string colors from Atom's default syntax themes
+    color: contrast(@syntax-background-color, #a8ff60, #dd1144);
+  }
+}
