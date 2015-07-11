@@ -2,7 +2,7 @@
 
 Provide semantic coloring for Atom. Define what is colorized. Every variable, function, class name, constant has a consistent color across all of your source.
 
-* Be as diverse as you want. Define how diverse your color scheme is with 8-180 colors used.
+* Be as diverse as you want. Define how diverse your color scheme is with 8-360 colors used.
 * LESS Styles compiled from your base syntax colors for good consistent contrast against BG!
 * Customize the entities that is colorized
 
