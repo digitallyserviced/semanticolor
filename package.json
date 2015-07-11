@@ -1,14 +1,12 @@
 {
   "name": "semanticolor",
   "main": "./lib/semanticolor",
-  "version": "0.1.4",
-  "description": "Provide semantic coloring for Atom. Define what is colorized. Up to 180 color combinations based off your Theme/Style. Every variable, function, class name, constant has a consistent color across all of your source.",
+  "version": "0.1.5",
+  "description": "Provide semantic coloring for Atom. Define what is colorized. Up to 180 color combinations based off your Theme/Style. Every variable, function, class name, constant has a consistent color across all of your source. Useful for dyslexic/dysgraphic users.",
   "keywords": [
     "semantic",
     "highlight",
     "color",
-    "colorcoder",
-    "coding with colors",
     "dyslexic",
     "dysgraphic"
   ],
@@ -17,7 +15,8 @@
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
   },
-  "readme": "README.md",
+  "readme": "",
+  "readmeFilename": "README.md",
   "styleSheets": [
     "semanticolor.atom-text-editor.less"
   ],

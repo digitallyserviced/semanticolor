@@ -2,7 +2,10 @@
 //
 // See https://github.com/atom/atom-dark-ui/blob/master/styles/ui-variables.less
 // for a full listing of what's available.
+
 @import "syntax-variables";
+@import "semanticolor";
+
 .colorlexia {
 }
 
@@ -24,7 +27,7 @@
   text-decoration: none;
 
   .identifier {
-    .color-indices(180);
+    .color-indices(@colorDiversity);
 
     .color-indices(@n, @i: 1) when (@i =< @n) {
       @hue: @i * (360 / @n);
@@ -32,7 +35,7 @@
         // Choose a color of the given hue with good contrast
         color: contrast(@syntax-background-color,
           hsl(@hue, 100%, 25%),
-          hsl(@hue, 65%, 75%)) !important;
+          hsl(@hue, 75%, 75%)) !important;
       }
       .color-indices(@n, @i + 1);
     }
