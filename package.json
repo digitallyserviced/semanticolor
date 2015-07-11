@@ -1,7 +1,7 @@
 {
   "name": "semanticolor",
   "main": "./lib/semanticolor",
-  "version": "0.1.7",
+  "version": "0.1.8",
   "description": "Provide semantic coloring for Atom. Define what is colorized. Up to 180 color combinations based off your Theme/Style. Every variable, function, class name, constant has a consistent color across all of your source. Useful for dyslexic/dysgraphic users.",
   "keywords": [
     "semantic",
