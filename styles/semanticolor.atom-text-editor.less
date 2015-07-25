@@ -34,8 +34,8 @@
       &.semanticolor-@{i} {
         // Choose a color of the given hue with good contrast
         color: contrast(@syntax-background-color,
-          hsl(@hue, 100%, 25%),
-          hsl(@hue, 75%, 75%)) !important;
+          hsl(@hue, @saturationLevelA1, @saturationLevelA2),
+          hsl(@hue, @saturationLevelB1, @saturationLevelB1)) !important;
       }
       .color-indices(@n, @i + 1);
     }
