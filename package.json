@@ -1,7 +1,7 @@
 {
   "name": "semanticolor",
-  "main": "./lib/semanticolor",
-  "version": "0.2.2",
+  "main": "./lib/semanticolor.js",
+  "version": "1.0.0",
   "description": "Provide semantic coloring for Atom. Define what is colorized. Up to 180 color combinations based off your Theme/Style. Every variable, function, class name, constant has a consistent color across all of your source. Useful for dyslexic/dysgraphic users.",
   "keywords": [
     "semantic",
@@ -22,6 +22,8 @@
   ],
   "dependencies": {
     "atom-space-pen-views": "~2.0.5",
-    "lodash": "^3.10.0"
+    "lodash": "^4.13.1",
+    "murmurhash3js": "^3.0.1",
+    "sugar": "^1.4.1"
   }
 }
