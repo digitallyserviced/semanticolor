@@ -1,4 +1,8 @@
-# semanticolor
+# semanticolor *ABANDONED*
+
+## Gave Up On Atom - Sublime Text 3 Is Far Superior For Me
+
+[Semantic Highlighting With ColorCoder on ST3](https://packagecontrol.io/packages/Colorcoder)
 
 Provide semantic coloring for Atom. Define what is colorized. Every variable, function, class name, constant has a consistent color across all of your source.
 
