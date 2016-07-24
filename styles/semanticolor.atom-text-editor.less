@@ -2,60 +2,31 @@
 //
 // See https://github.com/atom/atom-dark-ui/blob/master/styles/ui-variables.less
 // for a full listing of what's available.
-
 @import "syntax-variables";
 @import "semanticolor";
 
-.colorlexia {
-}
-
-@bright-text-color:
-  contrast(@syntax-background-color,
-      lighten(@syntax-text-color, 20%),
-      darken(@syntax-text-color, 20%));
-
-.text-color(@contrast) {
-  color: mix(@bright-text-color, @syntax-background-color, @contrast);
-}
-
 .source {
-  // Reset font attributes to prevent interference from main syntax theme
-  .text-color(80%);
-  background-color: transparent;
-  font-style: normal;
-  font-weight: normal;
-  text-decoration: none;
+	.semanticolor-mute {
+		color: mix(@syntax-text-color, @syntax-background-color, 85%);
+	}
+
+	.semanticolor-contrast {
+		color: @syntax-background-color;
+		background-color: @syntax-text-color;
+	}
 
   .identifier {
-    .color-indices(@colorDiversity);
+    .color-indices(@hues);
 
-    .color-indices(@n, @i: 1) when (@i =< @n) {
+    .color-indices(@n, @i:1) when (@i =< @n) {
       @hue: @i * (360 / @n);
+      @color: hsl(@hue, @saturation, @luminosity);
+
       &.semanticolor-@{i} {
         // Choose a color of the given hue with good contrast
-        color: contrast(@syntax-background-color,
-          hsl(@hue, @saturationLevelA1, @saturationLevelA2),
-          hsl(@hue, @saturationLevelB1, @saturationLevelB2)) !important;
+        color: contrast(@syntax-background-color, tint(@color, @fade), shade(@color, @fade)) !important;
       }
       .color-indices(@n, @i + 1);
     }
-  }
-
-  .comment {
-    .text-color(40%);
-  }
-
-  .keyword {
-    font-weight: bold;
-  }
-
-  .number {
-    .text-color(100%);
-  }
-
-  .string,
-  .regex {
-    // TODO: Currently, these are simply the string colors from Atom's default syntax themes
-    color: contrast(@syntax-background-color, #a8ff60, #dd1144);
   }
 }
