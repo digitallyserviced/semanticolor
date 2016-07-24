@@ -1,32 +1,10 @@
 # semanticolor
 
-Provide semantic coloring for Atom. Define what is colorized. Every variable, function, class name, constant has a consistent color across all of your source.
+Semantic highlighting for almost any language in Atom. Colors are used to highlight the important parts of your program: the variables, methods, and classes.
 
-* Be as diverse as you want. Define how diverse your color scheme is with 8-360 colors used.
-* LESS Styles compiled from your base syntax colors for good consistent contrast against BG!
-* Customize the entities that is colorized
+For more about semantic highlighting, see the article [Coding in Color](https://medium.com/@evnbr/coding-in-color-3a6db2743a1e#.qpff7n7r6) by Evan Brooks.
 
-For JavaScript syntax to work properly you will need the language-javascript-semantic package since Atom does not properly parse JavaScript on it's own.
+By default, semanticolor also accentuates comments to make them stand out. This option can be turned off in the settings, but for the reasoning behind it, read [Your syntax highlighter is wrong](https://medium.com/@MrJamesFisher/your-syntax-highlighter-is-wrong-6f83add748c9#.a51p6whqc) by James Fisher.
 
-Some features and ideas were taken from that package and applied globally, not just to JavaScript.
-
-# Notes
-
-The settings supply the ability to configure the saturation levels that are used to generate the colors. If you are having contrast issues, or want to minimize/widen the range of colors used, you can manipulate these values. Sadly I do not have a decent way to describe the best way to go about getting your colors right without playing with the values... The relevant code used for generating the colors is below.
-
-```less
-.color-indices(@colorDiversity);
-
-.color-indices(@n, @i: 1) when (@i =< @n) {
-  @hue: @i * (360 / @n);
-  &.semanticolor-@{i} {
-    // Choose a color of the given hue with good contrast
-    color: contrast(@syntax-background-color,
-      hsl(@hue, @saturationLevelA1, @saturationLevelA2),
-      hsl(@hue, @saturationLevelB1, @saturationLevelB1)) !important;
-  }
-  .color-indices(@n, @i + 1);
-}
-```
-
-![A screenshot of semanticolor](https://raw.githubusercontent.com/xcezzz/semanticolor/master/screenshot.png)
+* Works both dark and light themes.
+* Settings to let you adjust how colors are generated and applied.

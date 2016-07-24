@@ -2,13 +2,16 @@
   "name": "semanticolor",
   "main": "./lib/semanticolor.js",
   "version": "1.0.0",
-  "description": "Provide semantic coloring for Atom. Define what is colorized. Up to 180 color combinations based off your Theme/Style. Every variable, function, class name, constant has a consistent color across all of your source. Useful for dyslexic/dysgraphic users.",
+  "description": "Semantic highlighting for almost any language.",
   "keywords": [
     "semantic",
     "highlight",
     "color",
     "dyslexic",
-    "dysgraphic"
+    "dysgraphic",
+		"syntax",
+		"highlighting",
+		"highlighter"
   ],
   "repository": "https://github.com/xcezzz/semanticolor",
   "license": "MIT",

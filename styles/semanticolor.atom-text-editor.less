@@ -5,24 +5,18 @@
 @import "syntax-variables";
 @import "semanticolor";
 
-.text-color(@contrast) {
-  color: mix(@syntax-text-color, @syntax-background-color, @contrast);
-}
-
 .source {
-  // Reset font attributes to prevent interference from main syntax theme
-  .text-color(80%);
+	.semanticolor-mute {
+		color: mix(@syntax-text-color, @syntax-background-color, 85%);
+	}
 
-  .keyword,
-  .storage,
-  .storage.type,
-  .support,
-  .support.type {
-    .text-color(80%);
-  }
+	.semanticolor-contrast {
+		color: @syntax-background-color;
+		background-color: @syntax-text-color;
+	}
 
   .identifier {
-    .color-indices(@colors);
+    .color-indices(@hues);
 
     .color-indices(@n, @i:1) when (@i =< @n) {
       @hue: @i * (360 / @n);
@@ -34,9 +28,5 @@
       }
       .color-indices(@n, @i + 1);
     }
-  }
-
-  .keyword {
-    font-weight: bold;
   }
 }
