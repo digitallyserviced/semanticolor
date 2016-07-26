@@ -1,39 +1,39 @@
-Colorlexia = require '../lib/colorlexia'
+Semanticolor = require '../lib/semanticolor'
 
 # Use the command `window:run-package-specs` (cmd-alt-ctrl-p) to run specs.
 #
 # To run a specific `it` or `describe` block add an `f` to the front (e.g. `fit`
 # or `fdescribe`). Remove the `f` to unfocus the block.
 
-describe "Colorlexia", ->
+describe "Semanticolor", ->
   [workspaceElement, activationPromise] = []
 
   beforeEach ->
     workspaceElement = atom.views.getView(atom.workspace)
-    activationPromise = atom.packages.activatePackage('colorlexia')
+    activationPromise = atom.packages.activatePackage('semanticolor')
 
-  describe "when the colorlexia:toggle event is triggered", ->
+  describe "when the semanticolor:toggle event is triggered", ->
     it "hides and shows the modal panel", ->
       # Before the activation event the view is not on the DOM, and no panel
       # has been created
-      expect(workspaceElement.querySelector('.colorlexia')).not.toExist()
+      expect(workspaceElement.querySelector('.semanticolor')).not.toExist()
 
       # This is an activation event, triggering it will cause the package to be
       # activated.
-      atom.commands.dispatch workspaceElement, 'colorlexia:toggle'
+      atom.commands.dispatch workspaceElement, 'semanticolor:toggle'
 
       waitsForPromise ->
         activationPromise
 
       runs ->
-        expect(workspaceElement.querySelector('.colorlexia')).toExist()
+        expect(workspaceElement.querySelector('.semanticolor')).toExist()
 
-        colorlexiaElement = workspaceElement.querySelector('.colorlexia')
+        colorlexiaElement = workspaceElement.querySelector('.semanticolor')
         expect(colorlexiaElement).toExist()
 
         colorlexiaPanel = atom.workspace.panelForItem(colorlexiaElement)
         expect(colorlexiaPanel.isVisible()).toBe true
-        atom.commands.dispatch workspaceElement, 'colorlexia:toggle'
+        atom.commands.dispatch workspaceElement, 'semanticolor:toggle'
         expect(colorlexiaPanel.isVisible()).toBe false
 
     it "hides and shows the view", ->
@@ -45,18 +45,18 @@ describe "Colorlexia", ->
       # workspaceElement to the DOM are generally slower than those off DOM.
       jasmine.attachToDOM(workspaceElement)
 
-      expect(workspaceElement.querySelector('.colorlexia')).not.toExist()
+      expect(workspaceElement.querySelector('.semanticolor')).not.toExist()
 
       # This is an activation event, triggering it causes the package to be
       # activated.
-      atom.commands.dispatch workspaceElement, 'colorlexia:toggle'
+      atom.commands.dispatch workspaceElement, 'semanticolor:toggle'
 
       waitsForPromise ->
         activationPromise
 
       runs ->
         # Now we can test for view visibility
-        colorlexiaElement = workspaceElement.querySelector('.colorlexia')
-        expect(colorlexiaElement).toBeVisible()
-        atom.commands.dispatch workspaceElement, 'colorlexia:toggle'
-        expect(colorlexiaElement).not.toBeVisible()
+        semanticolorElement = workspaceElement.querySelector('.semanticolor')
+        expect(semanticolorElement).toBeVisible()
+        atom.commands.dispatch workspaceElement, 'semanticolor:toggle'
+        expect(semanticolorElement).not.toBeVisible()
