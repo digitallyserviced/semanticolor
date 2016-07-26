@@ -1,7 +1,7 @@
 {
   "name": "semanticolor",
   "main": "./lib/semanticolor.js",
-  "version": "2.0.0",
+  "version": "3.0.0",
   "description": "Semantic highlighting for almost any language.",
   "keywords": [
     "semantic",
@@ -9,9 +9,9 @@
     "color",
     "dyslexic",
     "dysgraphic",
-		"syntax",
-		"highlighting",
-		"highlighter"
+    "syntax",
+    "highlighting",
+    "highlighter"
   ],
   "repository": "https://github.com/xcezzz/semanticolor",
   "license": "MIT",
