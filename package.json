@@ -1,7 +1,7 @@
 {
   "name": "semanticolor",
   "main": "./lib/semanticolor.js",
-  "version": "3.0.0",
+  "version": "3.1.0",
   "description": "Semantic highlighting for almost any language.",
   "keywords": [
     "semantic",
@@ -24,9 +24,8 @@
     "semanticolor.atom-text-editor.less"
   ],
   "dependencies": {
-    "atom-space-pen-views": "~2.0.5",
     "lodash": "^4.13.1",
     "murmurhash3js": "^3.0.1",
-    "sugar": "^1.4.1"
+    "sugar": "^2.0.0"
   }
 }
