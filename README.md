@@ -8,3 +8,12 @@ By default, semanticolor also accentuates comments to make them stand out. This 
 
 * Works both dark and light themes.
 * Settings to let you adjust how colors are generated and applied.
+
+# language settings
+
+These are the meanings of the available language options:
+
+* contrast - make these elements stand out from the rest of the document
+* mute - make these elements less prominent than the rest of the document
+* colorize - colorize these elements using semanticolor
+* theme - let the configured syntax theme determine the color for these elements
