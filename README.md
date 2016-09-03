@@ -17,3 +17,15 @@ These are the meanings of the available language options:
 * mute - make these elements less prominent than the rest of the document
 * colorize - colorize these elements using semanticolor
 * theme - let the configured syntax theme determine the color for these elements
+
+# screenshots
+
+## light
+
+### Atom Light
+
+![Atom Light Screenshot](https://raw.githubusercontent.com/xcezzz/semanticolor/master/atom-light.png)
+
+### Base 16 Tomorrow Light
+
+![Base 16 Tomorrow Light Screenshot](https://raw.githubusercontent.com/xcezzz/semanticolor/master/base16-tomorrow-light.png)
