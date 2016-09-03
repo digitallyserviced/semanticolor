@@ -5,28 +5,26 @@
 @import "syntax-variables";
 @import "semanticolor";
 
-.source {
-	.semanticolor-mute {
-		color: mix(@syntax-text-color, @syntax-background-color, 85%);
+.semanticolor-mute {
+	color: mix(@syntax-text-color, @syntax-background-color, 85%);
+}
+
+.semanticolor-contrast {
+	color           : @syntax-background-color;
+	background-color: @syntax-text-color;
+}
+
+.identifier {
+	.color-indices(@hues);
+
+	.color-indices(@n, @i:1) when (@i =< @n) {
+		@hue  : @i * (360 / @n);
+		@color: hsl(@hue, @saturation, @luminosity);
+
+		&.semanticolor-@{i} {
+			// Choose a color of the given hue with good contrast
+			color: contrast(@syntax-background-color, tint(@color, @fade), shade(@color, @fade)) !important;
+		}
+		.color-indices(@n, @i + 1);
 	}
-
-	.semanticolor-contrast {
-		color: @syntax-background-color;
-		background-color: @syntax-text-color;
-	}
-
-  .identifier {
-    .color-indices(@hues);
-
-    .color-indices(@n, @i:1) when (@i =< @n) {
-      @hue: @i * (360 / @n);
-      @color: hsl(@hue, @saturation, @luminosity);
-
-      &.semanticolor-@{i} {
-        // Choose a color of the given hue with good contrast
-        color: contrast(@syntax-background-color, tint(@color, @fade), shade(@color, @fade)) !important;
-      }
-      .color-indices(@n, @i + 1);
-    }
-  }
 }
