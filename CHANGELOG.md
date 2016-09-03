@@ -1,3 +1,4 @@
-## 0.1.0 - First Release
-* First Released Version
-* Instantly supports all languages and enables functions, function-calls, variables, constants, class names, class entities.
+## 3.2.0 - improvements all around
+* miscellaneous bug fixes and improvements
+* support added for HTML, XML, JSON, and other grammars
+* more options for how to apply colors
