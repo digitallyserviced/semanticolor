@@ -20,12 +20,29 @@ These are the meanings of the available language options:
 
 # screenshots
 
-## light
-
-### Atom Light
-
+Atom Light
 ![Atom Light Screenshot](https://raw.githubusercontent.com/xcezzz/semanticolor/master/atom-light.png)
 
-### Base 16 Tomorrow Light
-
+Base 16 Tomorrow Light
 ![Base 16 Tomorrow Light Screenshot](https://raw.githubusercontent.com/xcezzz/semanticolor/master/base16-tomorrow-light.png)
+
+One Light
+![One Light Screenshot](https://raw.githubusercontent.com/xcezzz/semanticolor/master/one-light.png)
+
+Solarized Light
+![Solarized Light Screenshot](https://raw.githubusercontent.com/xcezzz/semanticolor/master/solarized-light.png)
+
+Atom Dark
+![Atom Dark Screenshot](https://raw.githubusercontent.com/xcezzz/semanticolor/master/atom-dark.png)
+
+Base 16 Tomorrow Dark
+![Base 16 Tomorrow Screenshot](https://raw.githubusercontent.com/xcezzz/semanticolor/master/base16-tomorrow-dark.png)
+
+Monokai Seti
+![Monokai Seti Screenshot](https://raw.githubusercontent.com/xcezzz/semanticolor/master/monokai-seti.png)
+
+One Dark
+![One Dark Screenshot](https://raw.githubusercontent.com/xcezzz/semanticolor/master/one-dark.png)
+
+Solarized Dark
+![Solarized Dark Screenshot](https://raw.githubusercontent.com/xcezzz/semanticolor/master/solarized-dark.png)
