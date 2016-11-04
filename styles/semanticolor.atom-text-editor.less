@@ -2,15 +2,15 @@
 //
 // See https://github.com/atom/atom-dark-ui/blob/master/styles/ui-variables.less
 // for a full listing of what's available.
-@import "syntax-variables";
-@import "semanticolor";
+@import 'syntax-variables';
+@import 'semanticolor';
 
 .semanticolor-mute {
 	color: mix(@syntax-text-color, @syntax-background-color, 85%);
 }
 
 .semanticolor-contrast {
-	color           : @syntax-background-color;
+	color: @syntax-background-color;
 	background-color: @syntax-text-color;
 }
 
@@ -18,7 +18,7 @@
 	.color-indices(@hues);
 
 	.color-indices(@n, @i:1) when (@i =< @n) {
-		@hue  : @i * (360 / @n);
+		@hue: @i * (360 / @n);
 		@color: hsl(@hue, @saturation, @luminosity);
 
 		&.semanticolor-@{i} {
