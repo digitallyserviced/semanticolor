@@ -17,7 +17,7 @@
 .identifier {
 	.color-indices(@hues);
 
-	.color-indices(@n, @i:1) when (@i =< @n) {
+	.color-indices( @n, @i:1) when (@i =< @n) {
 		@hue: @i * (360 / @n);
 		@color: hsl(@hue, @saturation, @luminosity);
 

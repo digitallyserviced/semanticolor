@@ -17,6 +17,7 @@ These are the meanings of the available language options:
 * mute - make these elements less prominent than the rest of the document
 * colorize - colorize these elements using semanticolor
 * theme - let the configured syntax theme determine the color for these elements
+* defer - let other scopes for these elements determine the option to use
 
 # screenshots
 
