@@ -1,3 +1,6 @@
+## 3.4.1 - disable diff format
+* disable diff again; changes to git-plus will make semanticolor work in diffs anyway
+
 ## 3.4.0 - redesigned option selection
 * support for colorizing variables in ES6 template strings
 * should be less likely to lose settings from previous versions
