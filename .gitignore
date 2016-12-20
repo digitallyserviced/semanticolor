@@ -1,5 +1,6 @@
 .DS_Store
 npm-debug.log
+yarn-error.log
 node_modules
 styles/semanticolor.less
 lib/grammars.txt

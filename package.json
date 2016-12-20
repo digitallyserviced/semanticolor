@@ -18,14 +18,16 @@
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
   },
-  "readme": "",
-  "readmeFilename": "README.md",
   "styleSheets": [
     "semanticolor.atom-text-editor.less"
   ],
   "dependencies": {
+    "debug": "^2.4.5",
     "lodash": "^4.13.1",
     "murmurhash3js": "^3.0.1",
     "sugar": "^2.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^3.12.2"
   }
 }
