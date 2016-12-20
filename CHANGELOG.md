@@ -1,3 +1,6 @@
+## 3.4.2 - fix intermittent issue
+* fix issue where semanticolor would sometimes not take effect on window load
+
 ## 3.4.1 - disable diff format
 * disable diff again; changes to git-plus will make semanticolor work in diffs anyway
 
