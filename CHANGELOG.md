@@ -1,3 +1,6 @@
+## 3.4.4 - Atom 1.13.0 compatibility, take 2
+* Atom 1.13.0 compatibility
+
 ## 3.4.3 - Atom 1.13.0 compatibility, fix intermittent loading issue
 * fix issue where semanticolor would sometimes not take effect on window load
 * Atom 1.13.0 compatibility

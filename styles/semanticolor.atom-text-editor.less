@@ -21,7 +21,7 @@
 		@hue: @i * (360 / @n);
 		@color: hsl(@hue, @saturation, @luminosity);
 
-		&.semanticolor-@{i} {
+		&.syntax--semanticolor-@{i} {
 			// Choose a color of the given hue with good contrast
 			color: contrast(@syntax-background-color, tint(@color, @fade), shade(@color, @fade)) !important;
 		}
