@@ -5,16 +5,16 @@
 @import 'syntax-variables';
 @import 'semanticolor';
 
-.semanticolor-mute {
+.syntax--semanticolor-mute {
 	color: mix(@syntax-text-color, @syntax-background-color, 85%);
 }
 
-.semanticolor-contrast {
+.syntax--semanticolor-contrast {
 	color: @syntax-background-color;
 	background-color: @syntax-text-color;
 }
 
-.identifier {
+.syntax--identifier {
 	.color-indices(@hues);
 
 	.color-indices( @n, @i:1) when (@i =< @n) {
