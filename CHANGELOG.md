@@ -1,3 +1,7 @@
+## 3.4.5 - backcompat Atom < 1.13.0, support vue components
+* re-add support for Atom < 1.13.0, especially useful on platforms where 1.13.0 is not yet available
+* force support for vue components
+
 ## 3.4.4 - Atom 1.13.0 compatibility, take 2
 * Atom 1.13.0 compatibility
 
