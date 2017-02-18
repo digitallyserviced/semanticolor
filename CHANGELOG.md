@@ -1,3 +1,5 @@
+## 3.4.7 - fix a potential crash bug
+
 ## 3.4.6 - better solution for intermittent loading issue
 
 ## 3.4.5 - backcompat Atom < 1.13.0, support Vue.js components
