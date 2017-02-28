@@ -1,3 +1,5 @@
+## 3.4.8 - fix typo in settings
+
 ## 3.4.7 - fix a potential crash bug
 
 ## 3.4.6 - better solution for intermittent loading issue
