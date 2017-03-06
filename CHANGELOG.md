@@ -1,3 +1,5 @@
+## 3.4.9 - adjust identifier characters
+
 ## 3.4.8 - fix typo in settings
 
 ## 3.4.7 - fix a potential crash bug
