@@ -1,3 +1,5 @@
+## 3.4.10 - fix different colors for same string
+
 ## 3.4.9 - adjust identifier characters
 
 ## 3.4.8 - fix typo in settings
