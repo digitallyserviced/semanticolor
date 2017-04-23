@@ -1,3 +1,6 @@
+## 3.5.0 - add default settings, remove annoying need to reload Atom
+* add Dockerfile and json to blacklist
+
 ## 3.4.10 - fix different colors for same string
 
 ## 3.4.9 - adjust identifier characters
