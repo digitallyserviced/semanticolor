@@ -1,3 +1,5 @@
+## 3.5.2 - another fix for issue adding new grammars to config
+
 ## 3.5.1 - fix issue with adding new grammars to config
 
 ## 3.5.0 - add default settings, remove annoying need to reload Atom
