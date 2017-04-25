@@ -1,3 +1,5 @@
+## 3.5.3 - fix enabling grammars as they are created
+
 ## 3.5.2 - another fix for issue adding new grammars to config
 
 ## 3.5.1 - fix issue with adding new grammars to config
