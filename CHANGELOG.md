@@ -1,3 +1,5 @@
+## 3.5.4 - fix error when first installing a new language
+
 ## 3.5.3 - fix enabling grammars as they are created
 
 ## 3.5.2 - another fix for issue adding new grammars to config
