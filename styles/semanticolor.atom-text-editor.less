@@ -22,11 +22,11 @@
 		@color: hsl(@hue, @saturation, @luminosity);
 
 		&.syntax--semanticolor-@{i} {
-			&:not(.syntax--invert) {
+			&:not(.syntax--bg) {
 				// Choose a color of the given hue with good contrast
 				color: contrast(@syntax-background-color, tint(@color, @fade), shade(@color, @fade)) !important;
 			}
-			&.syntax--invert {
+			&.syntax--bg {
 				color: @syntax-text-color !important;
 				background-color: contrast(@syntax-text-color, tint(@color, @fade), shade(@color, @fade)) !important;
 			}
