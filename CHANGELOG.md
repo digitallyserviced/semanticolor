@@ -1,3 +1,7 @@
+## 3.5.5 - more specific scope selection, colorize-bg option
+* 'Names' will no longer match scopes containing 'namespace'
+* colorize-bg option added
+
 ## 3.5.4 - fix error when first installing a new language
 
 ## 3.5.3 - fix enabling grammars as they are created

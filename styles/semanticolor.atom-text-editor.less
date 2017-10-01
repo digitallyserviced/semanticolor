@@ -22,8 +22,14 @@
 		@color: hsl(@hue, @saturation, @luminosity);
 
 		&.syntax--semanticolor-@{i} {
-			// Choose a color of the given hue with good contrast
-			color: contrast(@syntax-background-color, tint(@color, @fade), shade(@color, @fade)) !important;
+			&:not(.syntax--invert) {
+				// Choose a color of the given hue with good contrast
+				color: contrast(@syntax-background-color, tint(@color, @fade), shade(@color, @fade)) !important;
+			}
+			&.syntax--invert {
+				color: @syntax-text-color !important;
+				background-color: contrast(@syntax-text-color, tint(@color, @fade), shade(@color, @fade)) !important;
+			}
 		}
 		.color-indices(@n, @i + 1);
 	}
