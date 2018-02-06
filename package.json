@@ -1,7 +1,7 @@
 {
   "name": "semanticolor",
   "main": "./lib/semanticolor.js",
-  "version": "3.5.5",
+  "version": "3.5.6",
   "description": "Semantic highlighting for almost any language.",
   "keywords": [
     "semantic",
