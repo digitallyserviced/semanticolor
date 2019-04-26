@@ -16,6 +16,7 @@ These are the meanings of the available language options:
 * contrast - make these elements stand out from the rest of the document
 * mute - make these elements less prominent than the rest of the document
 * colorize - colorize these elements using semanticolor
+* colorize-bg - colorize the background of these elements using semanticolor
 * theme - let the configured syntax theme determine the color for these elements
 * defer - let other scopes for these elements determine the option to use
 * default - use the option you set in your configured defaults
