@@ -6,7 +6,7 @@ For more about semantic highlighting, see the article [Coding in Color](https://
 
 By default, semanticolor also accentuates comments to make them stand out. This option can be turned off in the settings, but for the reasoning behind it, read [Your syntax highlighter is wrong](https://medium.com/@MrJamesFisher/your-syntax-highlighter-is-wrong-6f83add748c9#.a51p6whqc) by James Fisher.
 
-* Works both dark and light themes.
+* Works with both dark and light themes.
 * Settings to let you adjust how colors are generated and applied.
 
 # language settings
