@@ -19,6 +19,8 @@ module.exports = {
 		'linebreak-style': ['error', 'unix'],
 		quotes: ['error', 'single'],
 		semi: ['error', 'always'],
+    'no-empty': 'off',
+    'no-unused-vars': ['error', { args: 'none' }],
 		'object-curly-spacing': ['error', 'always'],
 		'key-spacing': ['error', {
 			singleLine: { mode: 'strict' },
