@@ -22,7 +22,7 @@
     "semanticolor.atom-text-editor.less"
   ],
   "dependencies": {
-    "debug": "^2.4.5",
+    "debug": "^2.6.9",
     "lodash": "^4.13.1",
     "murmurhash3js": "^3.0.1",
     "semver": "^5.3.0",
