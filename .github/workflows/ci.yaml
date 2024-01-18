@@ -1,0 +1,54 @@
+---
+# Originally copied (and adapted) from
+# https://github.com/Spiker985/x-terminal-reloaded/blob/main/.github/workflows/main.yml
+name: "ci"
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+
+jobs:
+  test:
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, macos-latest, windows-2019]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Install Pulsar
+        uses: pulsar-edit/action-pulsar-dependency@v3.3
+
+      - name: Install dependencies (Windows)
+        if: ${{ runner.os == 'Windows' }}
+        # Currently the Pulsar process starts, but unlike *nix doesn't wait for
+        # ppm to finish, probably because pulsar.cmd needs updated as of Pulsar
+        # version 1.108.0, a ppm binary has been included (which is a clone of
+        # apm) with the intention of fully moving away from the apm binary
+        run: ppm install --verbose
+
+      - name: Install dependencies (*nix)
+        if: ${{ runner.os != 'Windows' }}
+        run: pulsar --package install --verbose
+
+      - name: Run the headless Pulsar Tests
+        uses: coactions/setup-xvfb@v1.0.1
+        with:
+          run: pulsar --test spec
+
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 'lts/*'
+
+      - name: npm install
+        run: npm install
+
+      - name: lint
+        run: npm run lint
