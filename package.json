@@ -32,6 +32,8 @@
     "eslint": "^4.18.2"
   },
   "scripts": {
+    "lint": "eslint .",
+    "lintfix": "npm run eslint -- --fix",
     "test": "pulsar --test spec"
   }
 }
